@@ -5,8 +5,15 @@ lightbox.option({
   'wrapAround': true
 })
 
+var musik = '';
+
+var audio = document.querySelector('.audio');
+if (musik) {
+  audio.src = musik;
+}
 
 function mulai() {
+  audio.play();
   window.scrollTo(0, 0);
   var mail_section = $('#mail-section');
   $('#mail').attr('src', 'assets/img/mail.gif');
